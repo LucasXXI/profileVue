@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img class="profile_lucas" alt="profile_lucas" src="./assets/lucas.svg">
+  <Profile msg="Lucas Miranda Leal"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Profile from './components/profile.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Profile
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&display=swap');;
+
+body{
+  background-color:#34495E;
+}
+
+@media(max-width: 1000px){
+    img{
+      width: 65%;
+      margin-top: 40px;
+    }
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #FFFF;
   margin-top: 60px;
 }
+
 </style>
